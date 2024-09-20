@@ -6,3 +6,6 @@
 # You can also add real Python code after learning the necessary concepts.
 # For now, just practice breaking larger tasks into smaller steps
 # and writing out your thoughts in pseudocode.
+# I'd like to find a more effective way to balance a budget rather than using excel
+# Developing a more effective way to calculate purchases and deposits 
+ # Redefine a way to actually see where each budget dollar is allocated 

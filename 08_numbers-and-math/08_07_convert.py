@@ -6,3 +6,6 @@
 # 4) Use two variables to perform a multiplication.
 #
 # What information is lost during which conversions?
+print(10 / 4) 
+print(.10 * 10)
+print(3 / 5)

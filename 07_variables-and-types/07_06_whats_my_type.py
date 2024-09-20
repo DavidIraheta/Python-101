@@ -2,6 +2,10 @@
 # What data types does it hold at certain points earlier in the script?
 
 mystery = None
+type(mystery) #none
 mystery = "Sommerfeld"
+type("Sommerfield") #string
 mystery = 137
-mystery = mystery + 0.0
+type(mystery) #int
+mystery = mystery + 0.0 
+type(mystery) #float
