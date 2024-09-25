@@ -3,3 +3,5 @@
 # the necessary letters from the given string.
 
 word = "tweezers "
+print(word[1:3])
+print(word[-1:-3:3])

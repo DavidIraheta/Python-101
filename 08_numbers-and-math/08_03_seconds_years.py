@@ -8,5 +8,3 @@ hours = 24
 days = 365
 seconds_in_a_year = minutes * seconds * hours * days
 print(seconds_in_a_year)
-
-import math
