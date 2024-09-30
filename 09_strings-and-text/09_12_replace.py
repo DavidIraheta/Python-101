@@ -27,5 +27,5 @@ it's always ourselves we find in the sea"""
 
 # Write your code below here
 original_poem = poem
-new_poem = (poem.replace("m", "_"))
+new_poem = poem.replace("m", "_")
 print(new_poem)

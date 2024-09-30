@@ -12,7 +12,7 @@ wrong = False
 right = True
 temp = 80
 sunny = True 
-if temp <= 50 or temp >= 85 and not sunny :
+if temp <= 50 or temp >= 85 and not sunny:
     print(" The Tempature is bad")
 else: 
     print("The tempature is good")

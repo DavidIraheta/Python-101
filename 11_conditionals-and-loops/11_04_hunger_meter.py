@@ -6,10 +6,11 @@
 
 
 hunger = 2
-
+if not type(str):
+    print("Make sure to declare your hunger levels with a string")
 if hunger == "big":
     print("Eat the pizza")
 elif hunger == "small":
     print("Eat the apple")
 else:
-    print("Don't eat anything")
+    print("Declare your hunger levels with a string")
