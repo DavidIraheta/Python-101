@@ -1,9 +1,3 @@
 # 1. Below the comments, write code in this script that prints out "hello world".
 # 2. Use your Python interpreter, to also print "hello world!".
-print("hello world")
-flag = "black"
-if flag =="green":
-    print("hell ye")
-else: 
-    print("nah dog")
-
+˜
