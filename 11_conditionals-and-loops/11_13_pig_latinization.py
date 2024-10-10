@@ -10,9 +10,7 @@
 # You'll need to use conditional statements to decide when a word is over.
 #
 # For example: You would never guess --> ouyay ouldway evernay uessgay
-story = latin
-
-"""You would never guess what can happen when you jump into a seemingly shallow puddle at night time!
+story = """You would never guess what can happen when you jump into a seemingly shallow puddle at night time!
 It turns out that it is not a puddle rather than a giant hole which brings you to a new world on the other side of the light water. Now you are left stunning and don't know what to do.
 So you decide to call Whoolio who lives in Never Never land.
 You can't believe your eyes. There are magical creatures of all shapes and sizes in all directions!
@@ -37,7 +35,7 @@ And after all those thoughts of ours, you realised you are flying high with bunc
 Because what I ate were not marshmallows, but exotic mushrooms of some sort.
 You think to yourself "What a strange effect." And proceed to drink a glass of milk.
 Thankfully, the milk has been spiked with disinfectant which allows sunlight to penetrate into your body. 
-The strange brew then causes your body to clone itself into two yous!  Bit-by-bit and byte-by-byte your entire is duplicated beside you.
+The strange brew then causes your body to clone itself into two yous! Bit-by-bit and byte-by-byte your entire is duplicated beside you.
 Except, it seems to be a younger, better looking version of yourself.
 Just one thought arrowed my head in that moment - "My clone... is it friend or enemy?"
 If it is my enemy, I must keep them close!
@@ -49,7 +47,7 @@ And so i was, sitting in Never Land, thinking if milk was the cause of my
 problems, or if i was just making it all up in my head..so I grabbed my
 backpack, stood up and...
 "The only true wisdom is in knowing you know nothing"
-I kept looping that thought in my head because awareness is key.  But greater than that…ignorance is bliss.
+I kept looping that thought in my head because awareness is key. But greater than that…ignorance is bliss.
 So there I am blissfully ignorant regurgitating magic milk together with my forked clone in a shattering landscape of spicy marsmallows, 
 when out of my backpack emerges...
 ... that old sandwich my mum had packed for school lunch a couple of years ago. It looked angry.
@@ -90,7 +88,7 @@ I ran out into the woods barefoot, but ready to take on the day.
 And then thats when my day started with a bee sting between my toes.
 So much for walking barefoot in this land of never never, well, never never again will I do that, except if
 am walking on the sandy beaches of the Indian Ocean coast or the Bahamas. Enough of daydreaming...
-because I'm no daydream believer. It was finally time for a reality check, except I couldn't find it, and my toes were swelling up to be the size of plums.  
+because I'm no daydream believer. It was finally time for a reality check, except I couldn't find it, and my toes were swelling up to be the size of plums.
 But all that came to my mind was eating plums at Grandma's, nothing more...
 I decide then that I need to rest and eat something. That’s when I opened my backpack and saw...
 my chicken, Horatio Von Cluckington III, had stowed away. I asked, "What are you doing here?!"
@@ -109,19 +107,15 @@ in a short while, i quickly think of a way to come out of it and freely free mys
 Luckily I knew from magical high school that the greatest way to defeat the evilest omelet was to serve it with a side of roast potatoes.
 
 With roasted potatoes echoing in my mind like a mantra, space inverted as the universe devoured itself and from the folds of reality a radiant figure emerged – the Divine Mother herself, a manifestation of pure grace and maternal power. 
-But when I realised I was mistaken and that the best approach to vanquish the most evil of all was...UPS! Suddenly i woke up and found myself  floating.  Disoriented, I flailed my arms, limbs meeting only air. Panic surged through me, but then I realized I wasn't falling. Confused, I sat up and realised that I was still in my room. The room was dark but there was ......
+But when I realised I was mistaken and that the best approach to vanquish the most evil of all was...UPS! Suddenly i woke up and found myself floating. Disoriented, I flailed my arms, limbs meeting only air. Panic surged through me, but then I realized I wasn't falling. Confused, I sat up and realised that I was still in my room. The room was dark but there was ......
 """
-latin = ""
+
 word = ""
 for char in story:
-    if char.isalpha():
+    if char == " ":
+        print(word[1:] + word[0] + "ay", end=" ")
+        word = ""
+    else: 
         word += char
-    else:
-        if word:
-            pig_latin_word = word[1:] + word[0] + "ay"
-            latin += pig_latin_word
-            word = ""
-    latin += char
     
-
-print(story)
+print(word[1:] + word[0] + "ay", end=" ")
