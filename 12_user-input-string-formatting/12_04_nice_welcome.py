@@ -5,7 +5,7 @@
 # in your welcome message.
 user_name = input("Enter your name: ")
 first_name = user_name.split()[0]
-print(f"So Good To Have You Here", {first_name},"!")
+print(f"So Good To Have You Here", first_name,"!")
 if __name__ == "__main__":
     pass
 else:
