@@ -13,8 +13,16 @@ lowercase_letters = "abcdefghijklmnopqrstuvwxyz"
 uppercase_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 secret = "I hear the gooseberries are doing well this year, and so are the mangoes."
 cipher = 7
-text = 
+encrypted_message = ""
 for char in secret:
     if char in lowercase_letters:
-        index = lowercase_letters.index(char)
-        new_index = (index + cipher) 
+        char_index = lowercase_letters.index(char)
+        new_index = (char_index + cipher) % len(lowercase_letters)
+        encrypted_message += lowercase_letters[new_index]
+    elif char in uppercase_letters:
+        char_index = uppercase_letters.index(char)
+        new_index = (char_index + cipher) % len(uppercase_letters)
+        encrypted_message += uppercase_letters[new_index]
+    else:
+        encrypted_message += char
+        print(encrypted_message)
