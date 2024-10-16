@@ -1,7 +1,7 @@
 import random
 
 num = random.randint(1, 20)
-guess = ""
+guess = None
 #allow the user to guess 5 times
 for i in range(5):
     guess = int(input("Guess a number between 1 and 20: "))
