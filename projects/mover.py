@@ -12,6 +12,14 @@
 # Create a new path for each file
 
 # Move the screenshot there
-import pathlib
-path = pathlib.Path.home()
-print(path) 
+from pathlib import Path
+import os
+
+desktop = Path.home().joinpath("Desktop")   
+# print(desktop)
+
+desktop.joinpath("Screenshots").mkdir(exist_ok=True)
+
+for f in desktop.iterdir():
+    if f.is_file() and f.suffix == ".png":
+        f.replace (desktop.joinpath("Screenshots").joinpath(f.name))
