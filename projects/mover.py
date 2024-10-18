@@ -12,3 +12,6 @@
 # Create a new path for each file
 
 # Move the screenshot there
+import pathlib
+path = pathlib.Path.home()
+print(path) 
