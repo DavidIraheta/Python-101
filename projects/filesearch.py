@@ -14,3 +14,15 @@
 # Start with a small folder to make it easy to check whether your program is
 # working correctly. Then search a bigger folder.
 # This program should work for any specified folder on your computer.
+from pathlib import Path
+import os
+folder = Path("/Users/davidiraheta/Desktop")
+jpg_files = ()
+file_extensions = ()
+for root, dirs, files in os.walk(folder):
+    for file in files:
+        if file.endswith(".jpg"):
+            jpg_files.append(os.path.join(root, file))
+        file_extensions.append(os.path.splitext(file)[1])
+print(jpg_files)
+# print(set(file_extensions))
