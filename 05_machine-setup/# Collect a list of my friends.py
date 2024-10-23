@@ -1,8 +1,7 @@
 # Collect a list of my friends
-Friends = ("Calla", "Travis")
+friends = "Calla", "Travis"
 # Define how to greet them
-Greeting = ("Heyo!")
-
+greeting = "Heyo!"
 # Greet each of them with a message on the console 
-For name in Friends 
+for name in friends:
     print(greeting, name)
